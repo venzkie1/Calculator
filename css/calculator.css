@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* container styling, flexible container */
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #1f434d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* to style the body of the calculator */
+.calculator{
+    background-color: #0a2229;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 6px 6px 15px -5px rgb(59, 165, 151),inset -6px -6px 15px -5px rgb(59 165 151)
+}
+/* form input field styling */
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 55px;
+    box-shadow: -8px -8px 15px rgba(44, 169, 226, 0.1), 5px 5px 15px rgba(16, 38, 240, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin:10px;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+}
+form .display input{
+    text-align: right;
+    padding-right: 30px ;
+    flex: 1;
+    font-size: 45px;
+    border-top: 2px solid rgb(15, 105, 121);
+    box-shadow: 0px -12px 20px -10px rgb(72, 72, 83);
+    pointer-events: none;
+}
+form .display2{
+    display: flex;
+    justify-content: flex-end;
+}
+form .display2 input{
+    text-align: right;
+    padding-right: 30px ;
+    flex: 1;
+    font-size: 45px;
+    border-bottom: 2px solid rgb(15, 105, 121);
+    box-shadow: 0px 12px 20px -10px rgb(72, 72, 83);
+    pointer-events: none;
+}
+
+button.calcdisplay{
+    font-size: 50px;
+    border: none;
+    background-color: #1f434d;
+    color: white;
+}

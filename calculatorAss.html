@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KODEGO CALCULATOR</title>
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <!-- function to show and hide the calculator -->
+        <div>
+            <button class="calcdisplay" onclick="displayCalculator()">Use Calculator</button>
+        </div>
+        <div class="calculator" id="calculator">
+            <form>
+                <!-- to display the input -->
+                <div class="display">
+                    <input type="text" name="display" id="input" >
+                </div>
+                <!-- to display the output -->
+                <div class="display2">
+                    <input type="text" name="display2" id="output">
+                </div>
+
+                <div>
+                    <!-- to clear the input including the output -->
+                    <input type="button" value="%" onclick="clk('%')">
+                    <input type="button" value="CE" onclick="clrdisp()">
+                    <input type="button" value="C" onclick="clrdisp()">
+                    <input type="button" value="⌫" onclick="display.value = display.value.toString().slice(0,-1)">
+                </div>
+
+                <div>
+                    <input type="button" value="1/x" onclick="clk('')">
+                    <input type="button" value="x²" onclick="clk('')">
+                    <input type="button" value="&#8730;x" onclick="clk('')">
+                    <input type="button" value="÷" onclick="clk('/')">
+                </div>
+
+                <div>
+                    <input type="button" value="7" onclick="clk(7)">
+                    <input type="button" value="8" onclick="clk(8)">
+                    <input type="button" value="9" onclick="clk(9)">
+                    <input type="button" value="×" onclick="clk('*')">
+                </div>
+
+                <div>
+                    <input type="button" value="4" onclick="clk(4)">
+                    <input type="button" value="5" onclick="clk(5)">
+                    <input type="button" value="6" onclick="clk(6)">
+                    <input type="button" value="−" onclick="clk('-')">
+                </div>
+
+                <div>
+                    <input type="button" value="1" onclick="clk(1)">
+                    <input type="button" value="2" onclick="clk(2)">
+                    <input type="button" value="3" onclick="clk(3)">
+                    <input type="button" value="+" onclick="clk('+')">
+                </div>
+
+                <div>
+                    <input type="button" value="+/-" onclick="clk('')">
+                    <input type="button" value="0" onclick="clk(0)">
+                    <input type="button" value="." onclick="clk('.')">
+                    <input type="button" value="=" id="eql" onclick="equal('=')">
+                </div>
+
+
+            </form>
+        
+        </div>
+      
+    </div>
+
+    <script src="js/calculatortest.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
