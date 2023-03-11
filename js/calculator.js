@@ -78,7 +78,20 @@ function displayCalculator()
     }
 }
 
+let calc = document.getElementById(`calculator`);
+let button = document.getElementById(`overBut`);
+calc.style.display = `none`;
 
+function displayCalculator() {
+  if (calc.style.display === `none`) {
+    calc.style.display = `flex`;
+    button.textContent = "Hide Calculator";
+  } 
+  else {
+    calc.style.display = `none`;
+    button.textContent = "Use Calculator";
+  }
+}
 // let a;
 // function displayCalculator()
 // {

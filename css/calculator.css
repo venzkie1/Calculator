@@ -63,7 +63,7 @@ form .display2 input{
     pointer-events: none;
 }
 
-button.calcdisplay{
+h1.overwrite{
     font-size: 50px;
     border: none;
     background-color: #1f434d;
