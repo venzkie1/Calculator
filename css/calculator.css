@@ -19,8 +19,9 @@
     background-color: #0a2229;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: inset 6px 6px 15px -5px rgb(59, 165, 151),inset -6px -6px 15px -5px rgb(59 165 151)
+    box-shadow: inset 6px 6px 15px -5px rgb(59, 165, 151),inset -6px -6px 15px -5px rgb(59 165 151);
 }
+
 /* form input field styling */
 .calculator form input{
     border: 0;
@@ -69,3 +70,18 @@ h1.overwrite{
     background-color: #1f434d;
     color: white;
 }
+
+.design h1{
+    width: 100%;
+    height: auto;
+    color: white;
+    animation-name: colordesign;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes colordesign {
+    0%   {color: white;}
+    25%  {color: orangered;}
+    50%  {color: orange;}
+    100% {color: yellow;}
+  }
